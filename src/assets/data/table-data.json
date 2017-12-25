@@ -1,0 +1,38 @@
+{
+    "data": [{
+        "table_id": "T100",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T200",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T300",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T400",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T500",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg",
+        "menu_list": [],
+        "table_free": true
+    }]
+}

@@ -1,0 +1,20 @@
+<div class="order-summary">
+    <div class="title">Order Summary</div>
+    <!--<p>
+        order-summary of {{table_id}}
+        <br/> {{orderSummaryData|json}}
+        <br/>orderMenuCart: {{orderMenuCart|json}}
+    </p>-->
+    <div class="select-table">
+        Select the table for order summary:
+        <select [(ngModel)]="selectedMenuData">
+            <option *ngFor="let menuData of orderMenuCart" [ngValue]="menuData">{{menuData.table_id}}</option>
+        </select>
+    </div>
+    <div class="menu-list-section" *ngIf="selectedMenuData">
+        {{selectedMenuData|json}}
+        <ul>
+            <li class="menu-list" *ngFor="let menuItem of selectedMenuData.menu_list">{{menuItem}}</li>
+        </ul>
+    </div>
+</div>

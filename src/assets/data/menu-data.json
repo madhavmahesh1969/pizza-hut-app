@@ -6,19 +6,19 @@
             "menu_image": "burger.svg"
         },
         {
-            "menu_id": "M100",
+            "menu_id": "M200",
             "menu_name": "Burger",
             "menu_price": "100",
             "menu_image": "burger.svg"
         },
         {
-            "menu_id": "M100",
+            "menu_id": "M300",
             "menu_name": "Burger",
             "menu_price": "100",
             "menu_image": "burger.svg"
         },
         {
-            "menu_id": "M100",
+            "menu_id": "M400",
             "menu_name": "Burger",
             "menu_price": "100",
             "menu_image": "burger.svg"

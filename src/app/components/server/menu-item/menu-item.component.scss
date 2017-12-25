@@ -1,0 +1,37 @@
+.menu-item {
+    display: block;
+    //border: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    float: left;
+    width: 250px;
+    height: 200px;
+    background-image: url('../../../../assets/images/burger.jpg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    .menu-data {
+        padding-top: 70px;
+        text-align: center;
+        .menu-name {
+            font-size: 35px;
+        }
+        .menu-item-grey-out {
+            //margin: 30px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            //border: 1px solid black;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            /* For IE8 and earlier */
+        }
+    }
+}
+
+.menu-item-grey-out {
+    //margin: 30px;
+    background-color: #ffffff;
+    //border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
+}

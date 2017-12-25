@@ -1,0 +1,28 @@
+{
+    "data": [{
+        "table_id": "T100",
+        "table_server": "S100",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T200",
+        "table_server": "S100",
+        "menu_list": [],
+        "table_free": true
+    }, {
+        "table_id": "T300",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg"
+    }, {
+        "table_id": "T400",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg"
+    }, {
+        "table_id": "T500",
+        "table_name": "Table",
+        "table_server": "S100",
+        "table_image": "burger.svg"
+    }]
+}
