@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './route/app.routes';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
 
 import  {MenuCartService} from './service/menu-cart.service';
 
@@ -22,6 +26,14 @@ import { OrderSummaryComponent } from './components/server/order-summary/order-s
 import { LogoutComponent } from './components/logout/logout.component';
 import { AuthService } from './service/auth.service';
 import { AuthGuardService as AuthGuard } from './service/auth-guard.service';
+
+export function HttpLoaderFactory(http: HttpClient) {
+        return new TranslateHttpLoader(http);
+}
+// AoT requires an exported function for factories
+// export function HttpLoaderFactory(httpClient: HttpClient) {
+//     return new TranslateHttpLoader(httpClient, "i18n/", ".json");
+// }
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,11 +51,19 @@ import { AuthGuardService as AuthGuard } from './service/auth-guard.service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     HttpModule,
     routing,
-    FormsModule
+    FormsModule,
+    TranslateModule.forRoot({
+            loader: {
+                        provide: TranslateLoader,
+                        useFactory: HttpLoaderFactory,
+                        deps: [HttpClient]
+            }
+    })
   ],
-  providers: [MenuCartService, appRoutingProviders, AuthService, AuthGuard],
+  providers: [MenuCartService, appRoutingProviders, AuthService, AuthGuard,, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

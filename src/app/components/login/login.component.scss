@@ -126,3 +126,35 @@
 .login input[type="submit"]:focus {
     border-color: #05a;
 }
+
+.lang-chooser {
+    //background: #456;
+    height: 60px;
+    display: block;
+    //border: 1px solid black;
+    background: darkslateblue;
+    text-align: center;
+    .title {
+        text-align: center;
+        color: white;
+        width: 60%;
+        // font-size: 60px;
+        // font-weight: bold;
+        // font-family: 'Tangerine', serif;
+        font: {
+            size: 60px;
+            weight: bold;
+            family: 'Tangerine', serif;
+        }
+    }
+    .float-left {
+        display: inline-block;
+        color: white;
+        //float:left;
+        .lang-title {
+            font: {
+                size: 26px;
+            }
+        }
+    }
+}

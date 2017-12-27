@@ -1,0 +1,10 @@
+{
+    "HOME": {
+        "TITLE": "Bonjour Angular avec ngx-translate !",
+        "SELECT": "Changer la langue",
+        "LOGIN": "S'identifier",
+        "EMAIL": "Email",
+        "PASSWORD": "Mot de passe",
+        "MENU": "menu"
+    }
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslatePipe } from '../../pipe/translate.pipe';
 
 @Component({
   selector: 'app-top-menu-bar',

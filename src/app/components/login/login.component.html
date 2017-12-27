@@ -1,13 +1,38 @@
+<!--<h2>
+    {{ 'HOME.TITLE' | translate }}</h2>-->
+<div class="lang-chooser">
+    <!--<h2>{{ 'HOME.TITLE' | translate }}</h2>-->
+    <!--<label>
+        {{ 'HOME.SELECT' | translate }}
+        <select #langSelect (change)="translate.use(langSelect.value)">
+          <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+        </select>
+    </label>-->
+
+    <div class="title float-left">
+        Pizza Hut
+    </div>
+
+    <div class="float-left">
+        <div class="lang-title">
+            {{ 'HOME.SELECT' | translate }}
+            <select #langSelect (change)="translate.use(langSelect.value)">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ getLangName(lang)}}</option>
+            <!--<option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ getLangName(lang)}} {{ lang }}</option>-->
+          </select>
+        </div>
+    </div>
+</div>
 <div class="login-page">
     <div class="login">
         <div class="login-triangle"></div>
 
-        <h2 class="login-header">Log in</h2>
+        <h2 class="login-header">{{ 'HOME.LOGIN' | translate }}</h2>
 
         <form class="login-container">
-            <p><input type="email" placeholder="Email"></p>
-            <p><input type="password" placeholder="Password"></p>
-            <p><input type="submit" value="Log in" [routerLink]="['/server']"></p>
+            <p><input type="email" placeholder="{{ 'HOME.EMAIL' | translate }}"></p>
+            <p><input type="password" placeholder="{{ 'HOME.PASSWORD' | translate }}"></p>
+            <p><input type="submit" value="{{ 'HOME.LOGIN' | translate }}" [routerLink]="['/server']"></p>
         </form>
     </div>
 </div>
