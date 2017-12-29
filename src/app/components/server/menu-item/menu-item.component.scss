@@ -8,7 +8,12 @@
     height: 200px;
     //background-image: url('../../../../assets/images/burger.jpg');
     background-repeat: no-repeat;
+    background-size: 160px 160px;
+    background-position: center;
     cursor: pointer;
+    @media (min-width: 720px) {
+        background-size: auto;
+    }
     .menu-data {
         padding-top: 70px;
         text-align: center;

@@ -2,9 +2,12 @@
 ///@import "http://weloveiconfonts.com/api/?family=entypo";
 .app-menu-list {
     float: left;
-    width: 76%;
+    width: 100%;
     height: 600px;
     overflow: hidden;
+    @media (min-width: 720px) {
+        width: 77%;
+    }
 }
 
 app-table-list {
