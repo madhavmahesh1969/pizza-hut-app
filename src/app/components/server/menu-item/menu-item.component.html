@@ -1,4 +1,4 @@
-<div class="menu-item menu-item-grey-out" (click)="updateMenuList()">
+<div class="menu-item menu-item-grey-out" (click)="updateMenuList()" [style.background-image]="getBackgroundImagePath(menu_image)">
     <div class="">
         <div class="menu-data">
             <span class="menu-name menu-item-grey-out">{{menu_title}}</span>

@@ -47,10 +47,12 @@
     </div>
     <div class="blank-div float-left">
     </div>
-    <div class="float-left">
-        <input class="search" type="text" />
-    </div>
-    <div class="float-left">
-        <span class="logout"><a [routerLink]="['/logout']">Logout</a></span>
+    <div class="float-right">
+        <div class="float-left search">
+            <input class="search" type="text" />
+        </div>
+        <div class="float-left">
+            <span class="logout"><a [routerLink]="['/logout']"><img class="logout-image" src="../../assets/images/logout-outline.svg" alt="Kiwi standing on oval"></a></span>
+        </div>
     </div>
 </div>

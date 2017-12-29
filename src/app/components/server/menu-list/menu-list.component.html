@@ -6,7 +6,7 @@
         </div>
 
     </div>
-
-    <app-menu-item *ngFor="let menuItem of menu" [menu_title]="menuItem.menu_name" [menu_price]="menuItem.menu_price" [menu_id]="menuItem.menu_id"></app-menu-item>
+    <app-app-menu-scroller></app-app-menu-scroller>
+    <app-menu-item *ngFor="let menuItem of menu" [menu_title]="menuItem.menu_name" [menu_price]="menuItem.menu_price" [menu_id]="menuItem.menu_id" [menu_image]="menuItem.menu_image"></app-menu-item>
 
 </div>
