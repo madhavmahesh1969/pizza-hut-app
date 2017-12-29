@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-place.component.scss']
 })
 export class OrderPlaceComponent implements OnInit {
-
+mouseOvered: boolean;
   constructor() { }
 
   ngOnInit() {

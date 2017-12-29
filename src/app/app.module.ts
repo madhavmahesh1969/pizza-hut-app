@@ -27,6 +27,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { AuthService } from './service/auth.service';
 import { AuthGuardService as AuthGuard } from './service/auth-guard.service';
 import { AppMenuScrollerComponent } from './components/server/app-menu-scroller/app-menu-scroller.component';
+import { TranslatePipe } from './pipe/translate.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
         return new TranslateHttpLoader(http);
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuItemComponent,
     TableListComponent,
     TableItemComponent,
+    TranslatePipe,
     MenuCartComponent,
     TopMenuBarComponent,
     OrderSummaryComponent,

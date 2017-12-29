@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
               },{"lang_code":"te",
                 "lang_name":"తెలుగు"
               }];
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
         // console.log('state',state);
         // console.log('Current path',state._routerState);
         

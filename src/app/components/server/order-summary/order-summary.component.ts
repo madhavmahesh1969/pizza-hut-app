@@ -7,11 +7,11 @@ import { MenuCartService } from '../../../service/menu-cart.service';
   styleUrls: ['./order-summary.component.scss']
 })
 export class OrderSummaryComponent implements OnInit {
-  private table_id;x
-  private sub;
-  private orderSummaryData;
-  private orderMenuCart;
-  private selectedMenuData;
+  table_id;
+  sub;
+  orderSummaryData;
+  orderMenuCart;
+  selectedMenuData;
   constructor(private route: ActivatedRoute, private menuCartService: MenuCartService) { }
 
   ngOnInit() {
