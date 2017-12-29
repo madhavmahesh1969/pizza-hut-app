@@ -20,5 +20,7 @@ export class MenuItemComponent implements OnInit {
   }
   updateMenuList(){
     this.menuCartService.setMenuToTheTable(this.menu_id);
+    // send message to subscribers via observable subject
+        this.menuCartService.sendMessage1('Message from Home Component to App Component!');
   }
 }

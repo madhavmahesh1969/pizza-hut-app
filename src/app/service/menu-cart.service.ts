@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MenuCart } from '../model/menu-cart';
+import { Observable } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 //import { Subject }    from 'rxjs/Subject';
 
 @Injectable()
@@ -7,6 +9,8 @@ export class MenuCartService {
   orderedMenuCart:any[];
   menuCart:MenuCart;
   selectedTableId: String;
+  private subject = new Subject<boolean>();
+  private subject2 = new Subject<boolean>();
 
   // // Observable string sources
   // private menuAddedToCart = new Subject<string>();
@@ -118,4 +122,34 @@ export class MenuCartService {
   getOrderMenuCart(){
     return this.orderedMenuCart;
   }
+
+  tableSelectedOrNot(){
+    if(this.selectedTableId !== '') return true;
+    else return false;
+  }
+
+  sendMessage(message: boolean) {
+      this.subject.next(message);
+  }
+
+  clearMessage() {
+      this.subject.next();
+  }
+
+  getMessage(): Observable<any> {
+      return this.subject.asObservable();
+  }
+
+  sendMessage1(message: any) {
+      this.subject2.next(message);
+  }
+
+  clearMessage1() {
+      this.subject2.next();
+  }
+
+  getMessage1(): Observable<any> {
+      return this.subject2.asObservable();
+  }
 }
+

@@ -24,11 +24,20 @@ cart_value: number;
 
   setSelectedTableId(){
     this.menuCartService.setSelectedTableId(this.table_id);
+    this.menuCartService.sendMessage(false);
   }
   // getMenuCountByTableId(){
     
   //  this.cart_value = this.menuCartService.getMenuCountByTableId(this.table_id);
   //  console.log('this.cart_value',this.cart_value);
   // }
-  
+  // sendMessage(): void {
+  //     // send message to subscribers via observable subject
+  //     this.menuCartService.sendMessage(false);
+  // }
+
+  // clearMessage(): void {
+  //     // clear message
+  //     this.menuCartService.clearMessage();
+  // }
 }
