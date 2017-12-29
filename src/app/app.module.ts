@@ -65,7 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
             }
     })
   ],
-  providers: [MenuCartService, appRoutingProviders, AuthService, AuthGuard,, HttpClient],
+  providers: [MenuCartService, appRoutingProviders, AuthService, AuthGuard, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
