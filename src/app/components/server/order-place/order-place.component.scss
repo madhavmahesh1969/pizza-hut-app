@@ -2,23 +2,23 @@
 ///@import "http://weloveiconfonts.com/api/?family=entypo";
 .app-menu-list {
     float: left;
-    width: 100%;
+    width: 77%;
     height: 600px;
     overflow: hidden;
-    @media (min-width: 720px) {
-        width: 77%;
-    }
+    // @media (min-width: 720px) {
+    //     width: 77%;
+    // }
 }
 
 app-table-list {
     float: left;
     border: 1px solid black;
     height: 100%;
-    width: 22%;
+    width: 22.8%;
 }
 
 .app-menu-list-scrollbar {
-    overflow-y: scroll;
+    overflow-y: overlay;
 }
 
 

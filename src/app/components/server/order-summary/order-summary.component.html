@@ -7,14 +7,15 @@
     </p>-->
     <div class="select-table">
         Select the table for order summary:
-        <select [(ngModel)]="selectedMenuData">
-            <option *ngFor="let menuData of orderMenuCart" [ngValue]="menuData">{{menuData.table_id}}</option>
+        <select [(ngModel)]="table_id" (change)="getOrderSeummaryByTableId()">
+            <option *ngFor="let menuData of orderMenuCart" [ngValue]="menuData.table_id">{{menuData.table_id}}</option>
         </select>
     </div>
-    <div class="menu-list-section" *ngIf="selectedMenuData">
-        {{selectedMenuData|json}}
+    <!--{{orderSummaryData|json}}-->
+    <div class="menu-list-section" *ngIf="orderSummaryData">
+        <!--{{orderSummaryData.menu_list}}-->
         <ul>
-            <li class="menu-list" *ngFor="let menuItem of selectedMenuData.menu_list">{{menuItem}}</li>
+            <li class="menu-list" *ngFor="let menuItem of orderSummaryData.menu_list">{{menuItem}}</li>
         </ul>
     </div>
 </div>

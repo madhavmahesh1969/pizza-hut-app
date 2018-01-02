@@ -1,7 +1,7 @@
 ///@media (min-width: 720px) {
 .top-menu-bar {
     /* width: 99%; */
-    height: 125px;
+    height: 120px;
     display: block;
     padding-left: 10px;
     padding-right: 10px;
@@ -36,11 +36,12 @@
         .search {
             width: 240px;
             height: 40px;
-            margin-top: 4px;
+            //margin-top: 4px;
             margin-right: 10px;
             border-radius: 6px;
             @media (min-width: 720px) {
                 width: 400px;
+                margin-top: 4px;
             }
         }
     }

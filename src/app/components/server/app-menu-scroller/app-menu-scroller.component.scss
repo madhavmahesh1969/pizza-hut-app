@@ -1,8 +1,12 @@
-.marquee-custom{
-    height: 200px;
+.marquee-custom {
+    height: 150px;
     width: 2600px;
-    .scroll-menu-items{
-        float:left;
+    @media (min-width: 720px) {
+        height: 200px;
+    }
+    .scroll-menu-items {
+        float: left;
         width: 260px;
+        height: 150px;
     }
 }
