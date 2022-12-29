@@ -21,7 +21,7 @@
         "@angular/common": "^5.0.0",
         "@angular/compiler": "^5.0.0",
         "@angular/core": "^5.0.0",
-        "@angular/cli": "1.6.1",
+        "@angular/cli": "15.0.4",
         "@angular/compiler-cli": "^5.0.0",
         "@angular/forms": "^5.0.0",
         "@angular/http": "^5.0.0",
